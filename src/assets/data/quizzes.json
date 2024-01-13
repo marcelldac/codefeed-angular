@@ -1,61 +1,265 @@
 {
-  "title": "Você seria um herói ou vilão",
+  "title": "Descubra o quanto você sabe sobre a linguagem C#.",
   "questions": [
     {
       "id": 1,
-      "question": "Qual super poder você escolheria?",
+      "question": "Qual a sintaxe correta para obter um output 'Hello World' em C#",
       "options": [
         {
           "id": 1,
-          "name": "Raios-lazers",
-          "alias": "A"
+          "name": "Console.WriteLine('Hello World')",
+          "alias": "C"
         },
         {
           "id": 2,
-          "name": "Voar",
+          "name": "cout << 'Hello World'",
           "alias": "B"
         },
         {
           "id": 3,
-          "name": "Curar Feridas",
-          "alias": "B"
+          "name": "System.out.println('Hello World')",
+          "alias": "A"
         },
         {
           "id": 4,
-          "name": "Soltar fogo pelas mãos",
+          "name": "print('Hello World')",
           "alias": "A"
         }
       ]
     },
     {
       "id": 2,
-      "question": "Quem vocês salvaria primeiro?",
+      "question": "C# é um alias do C++?",
       "options": [
         {
           "id": 1,
-          "name": "Cachorro",
-          "alias": "B"
+          "name": "Verdadeiro",
+          "alias": "A"
         },
         {
           "id": 2,
-          "name": "Gato",
-          "alias": "B"
+          "name": "Falso",
+          "alias": "C"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Como inserir um comentário em C#?",
+      "options": [
+        {
+          "id": 1,
+          "name": "/* ... */",
+          "alias": "A"
+        },
+        {
+          "id": 2,
+          "name": "// ...",
+          "alias": "C"
         },
         {
           "id": 3,
-          "name": "Criança",
+          "name": "# ...",
           "alias": "A"
         },
         {
           "id": 4,
-          "name": "Idoso",
+          "name": "<!--...-->",
           "alias": "A"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Qual tipo é usado para criar uma variável que contém um texto?",
+      "options": [
+        {
+          "id": 1,
+          "name": "str",
+          "alias": "A"
+        },
+        {
+          "id": 2,
+          "name": "TxT",
+          "alias": "A"
+        },
+        {
+          "id": 3,
+          "name": "estringue",
+          "alias": "A"
+        },
+        {
+          "id": 4,
+          "name": "string",
+          "alias": "C"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Como você criaria uma variável com o valor 5?",
+      "options": [
+        {
+          "id": 1,
+          "name": "int x=5;",
+          "alias": "C"
+        },
+        {
+          "id": 2,
+          "name": "x=5;",
+          "alias": "A"
+        },
+        {
+          "id": 3,
+          "name": "double x=5;",
+          "alias": "B"
+        },
+        {
+          "id": 4,
+          "name": "num x=5;",
+          "alias": "A"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Como você criaria uma variável com o valor 2.8?",
+      "options": [
+        {
+          "id": 1,
+          "name": "int x=2.8;",
+          "alias": "A"
+        },
+        {
+          "id": 2,
+          "name": "double x=2.8;",
+          "alias": "C"
+        },
+        {
+          "id": 3,
+          "name": "double x=8.8;",
+          "alias": "B"
+        },
+        {
+          "id": 4,
+          "name": "x=2.8;",
+          "alias": "A"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Como criar um loop com while no C#?",
+      "options": [
+        {
+          "id": 1,
+          "name": "while x>y{...};",
+          "alias": "B"
+        },
+        {
+          "id": 2,
+          "name": "x>y while{...};",
+          "alias": "A"
+        },
+        {
+          "id": 3,
+          "name": "while x>y:...;",
+          "alias": "A"
+        },
+        {
+          "id": 4,
+          "name": "while(x>y){...};",
+          "alias": "C"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Qual modificador de acesso faz com que o código só possa ser acessado dentro da classe que foi criado?",
+      "options": [
+        {
+          "id": 1,
+          "name": "public",
+          "alias": "A"
+        },
+        {
+          "id": 2,
+          "name": "protected",
+          "alias": "B"
+        },
+        {
+          "id": 3,
+          "name": "internal",
+          "alias": "A"
+        },
+        {
+          "id": 4,
+          "name": "private",
+          "alias": "C"
+        },
+        {
+          "id": 5,
+          "name": "file",
+          "alias": "A"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "O código escrito para o .NET Framework é denominado código gerenciado. Ele é escrito em linguagens como Visual C# e Visual Basic. Ele se diferencia do código nativo tradicional porque",
+      "options": [
+        {
+          "id": 1,
+          "name": "Ele é escrito em código de máquina e compilado no Intermediate Language (IL) antes de ser executado.",
+          "alias": "B"
+        },
+        {
+          "id": 2,
+          "name": "Primeiramente ele precisa ser executado para depois gerar código de máquina.",
+          "alias": "A"
+        },
+        {
+          "id": 3,
+          "name": "Ele é compilado no Intermediate Language (IL) e depois traduzido em código de máquina antes de ser executado",
+          "alias": "C"
+        },
+        {
+          "id": 4,
+          "name": "Ele não precisa ser compilado porque é escrito nativamente para o .NET Framework",
+          "alias": "A"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Fornece códigos testados e reutilizáveis para os desenvolvedores utilizarem à partir de seus próprios aplicativos, facilitam o processo de desenvolvimento e fornecem acesso a funções essenciais do sistema. Essa funcionalidade refere-se.",
+      "options": [
+        {
+          "id": 1,
+          "name": "ao Visual Studio",
+          "alias": "A"
+        },
+        {
+          "id": 2,
+          "name": "ao CLR - Common Language Runtime",
+          "alias": "A"
+        },
+        {
+          "id": 3,
+          "name": "à Class Library - Biblioteca de classes",
+          "alias": "C"
+        },
+        {
+          "id": 4,
+          "name": "ao IL - Intermediate Language",
+          "alias": "B"
         }
       ]
     }
   ],
   "results": {
-    "A": "Você provavelmente seria um super vilão",
-    "B": "Você provavelmente seria um super heroi"
+    "A": "Nível Baixo",
+    "B": "Nível Médio",
+    "C": "Nível Alto"
   }
 }
