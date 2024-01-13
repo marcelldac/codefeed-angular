@@ -15,5 +15,16 @@
   <div *ngIf="isFinished" class="result">
     <h1>Resultado:</h1>
     <p>{{ answerSelected }}</p>
+    <div>
+      <div *ngIf="answerSelected === 'Nível Baixo'">
+        <h1>roadmap de nível baixo</h1>
+      </div>
+      <div *ngIf="answerSelected === 'Nível Médio'">
+        <h1>roadmap de nível médio</h1>
+      </div>
+      <div *ngIf="answerSelected === 'Nível Alto'">
+        <h1>roadmap de nível alto</h1>
+      </div>
+    </div>
   </div>
 </div>
