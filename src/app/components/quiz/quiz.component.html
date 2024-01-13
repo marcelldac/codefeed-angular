@@ -1,5 +1,16 @@
 <header class="header">
-  <h1 class="header-main-title">CodeFeed</h1>
+  <div class="header-main">
+    <h1 class="header-main-title">CodeFeed</h1>
+    <a [href]="githubURL" class="header-main-link" target="_blank">
+      <ng-icon name="octMarkGithub" size="30"></ng-icon>
+    </a>
+    <a [href]="linkedinURL" class="header-main-link" target="_blank">
+      <ng-icon name="ionLogoLinkedin" size="30"></ng-icon>
+    </a>
+    <a [href]="portfolioURL" class="header-main-link" target="_blank">
+      <ng-icon name="octLinkExternal" size="30"></ng-icon>
+    </a>
+  </div>
   <h2>{{ title }}</h2>
 </header>
 <main>

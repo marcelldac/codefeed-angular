@@ -1,28 +1,37 @@
 import { NgFor, NgIf, NgSwitch, NgSwitchCase } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { NgIconComponent, provideIcons } from '@ng-icons/core';
+import { octMarkGithub, octLinkExternal } from '@ng-icons/octicons';
+import { ionLogoLinkedin } from '@ng-icons/ionicons';
 import mock from '../../../assets/data/quizzes.json';
 @Component({
   selector: 'app-quiz',
   standalone: true,
-  imports: [NgFor, NgIf, NgSwitch, NgSwitchCase],
+  imports: [NgFor, NgIf, NgSwitch, NgSwitchCase, NgIconComponent],
+  viewProviders: [
+    provideIcons({ octMarkGithub, octLinkExternal, ionLogoLinkedin }),
+  ],
   templateUrl: './quiz.component.html',
   styleUrl: './quiz.component.css',
 })
 export class QuizComponent implements OnInit {
-  mock: any;
   constructor() {
     this.mock = mock;
   }
+  mock: any;
+  questions: any;
+  selectedQuestion: any;
+  answers: string[] = [];
   title = '';
   answerSelected = '';
-  answers: string[] = [];
-  selectedQuestion: any;
-  questions: any;
+  githubURL = 'https://github.com/marcelldac/';
+  linkedinURL = 'https://www.linkedin.com/in/marcell-dactes/';
+  portfolioURL = 'https://developermarcell.vercel.app/';
   questionIndex = 0;
   questionMaxIndex = 0;
   isFinished = false;
 
-  ngOnInit(): void {
+  ngOnInit() {
     if (mock) {
       this.isFinished = false;
       this.title = mock.title;

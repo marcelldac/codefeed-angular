@@ -2,6 +2,13 @@
 .questions-question {
   margin-bottom: 30px;
 }
+.header-main {
+  display: flex;
+  align-items: center;
+}
+.header-main-link {
+  margin: 5px;
+}
 .header-main-title {
   font-size: 100px;
 }
