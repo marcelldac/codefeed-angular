@@ -16,18 +16,18 @@
     </div>
   </div>
   <div *ngIf="isFinished" class="result">
-    <h1>Resultado:</h1>
-    <p>{{ answerSelected }}</p>
-    <div [ngSwitch]="answerSelected">
-      <div *ngSwitchCase="'Nível Baixo'">
-        <h1>roadmap de nível baixo</h1>
-      </div>
-      <div *ngSwitchCase="'Nível Médio'">
-        <h1>roadmap de nível médio</h1>
-      </div>
-      <div *ngSwitchCase="'Nível Alto'">
-        <h1>roadmap de nível alto</h1>
-      </div>
-    </div>
+    <h1>Resultado: {{ answerSelected }}</h1>
+    <p>
+      Separei dois roadmaps para complementar seu conhecimento em dotnet!
+      Divirta-se.
+    </p>
+    <a
+      class="result-first-link"
+      href="https://github.com/MoienTajik/AspNetCore-Developer-Roadmap"
+    >
+      👉 ASP.NET Core developer roadmap</a
+    >
+    <br />
+    <a href="https://roadmap.sh/aspnet-core">👉 Roadmap.sh - ASP.NET Core</a>
   </div>
 </main>

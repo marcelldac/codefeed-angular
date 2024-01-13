@@ -2,6 +2,7 @@
   --white-8: rgba(255, 255, 255, 0.8);
   --white-10: rgba(255, 255, 255, 1);
   --blackBackground: rgba(23, 25, 35, 1);
+  --blueLink-10: rgba(51, 102, 204, 1);
 }
 * {
   margin: 0;
@@ -20,6 +21,14 @@ button {
   outline: none;
   box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
+a {
+  text-decoration: none;
+  color: var(--white-8);
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--blueLink-10);
+}
 /* Utils */
 .content {
   display: flex;
@@ -27,5 +36,5 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  color: var(--white-10);
+  color: var(--white-8);
 }
