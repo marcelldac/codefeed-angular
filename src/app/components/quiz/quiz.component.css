@@ -8,9 +8,11 @@
 .questions-options {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .questions-options-button {
-  margin-bottom: 20px;
+  margin-bottom: 3px;
+  font-size: 15px;
 }
 .questions-options-button:hover {
   background-color: green;

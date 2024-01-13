@@ -13,8 +13,8 @@ body {
 }
 button {
   border-radius: 0;
-  line-height: 50px;
-  width: 100%;
+  line-height: 25px;
+  width: 30em;
   height: 100px;
   border: none;
   outline: none;
