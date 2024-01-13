@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --white-8: rgba(255, 255, 255, 0.8);
+  --white-10: rgba(255, 255, 255, 1);
+  --blackBackground: rgba(23, 25, 35, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(23, 25, 35, 1); /* --blackBackground */
+}
+/* Utils */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: var(--white-10);
+}
