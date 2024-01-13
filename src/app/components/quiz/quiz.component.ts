@@ -1,10 +1,10 @@
-import { NgFor, NgIf } from '@angular/common';
+import { NgFor, NgIf, NgSwitch, NgSwitchCase } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import mock from '../../../assets/data/quizzes.json';
 @Component({
   selector: 'app-quiz',
   standalone: true,
-  imports: [NgFor, NgIf],
+  imports: [NgFor, NgIf, NgSwitch, NgSwitchCase],
   templateUrl: './quiz.component.html',
   styleUrl: './quiz.component.css',
 })

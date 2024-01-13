@@ -1,3 +1,19 @@
-.container {
-  border: 1px solid white;
+.header,
+.questions-question {
+  margin-bottom: 30px;
+}
+.header-main-title {
+  font-size: 100px;
+}
+.questions-options {
+  display: flex;
+  flex-direction: column;
+}
+.questions-options-button {
+  margin-bottom: 20px;
+}
+.questions-options-button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
 }

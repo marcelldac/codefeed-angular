@@ -1,30 +1,33 @@
-<div class="container">
-  <div class="title">
-    <h1>BeezFeed</h1>
-    <h2>{{ title }}</h2>
-  </div>
+<header class="header">
+  <h1 class="header-main-title">CodeFeed</h1>
+  <h2>{{ title }}</h2>
+</header>
+<main>
   <div *ngIf="!isFinished" class="questions">
-    <h1>{{ selectedQuestion.question }}</h1>
-    <button
-      *ngFor="let option of selectedQuestion.options; index as i"
-      (click)="handleChooseQuestion(option.alias)"
-    >
-      {{ option.name }}
-    </button>
+    <h1 class="questions-question">{{ selectedQuestion.question }}</h1>
+    <div class="questions-options">
+      <button
+        class="questions-options-button"
+        *ngFor="let option of selectedQuestion.options; index as i"
+        (click)="handleChooseQuestion(option.alias)"
+      >
+        {{ option.name }}
+      </button>
+    </div>
   </div>
   <div *ngIf="isFinished" class="result">
     <h1>Resultado:</h1>
     <p>{{ answerSelected }}</p>
-    <div>
-      <div *ngIf="answerSelected === 'Nível Baixo'">
+    <div [ngSwitch]="answerSelected">
+      <div *ngSwitchCase="'Nível Baixo'">
         <h1>roadmap de nível baixo</h1>
       </div>
-      <div *ngIf="answerSelected === 'Nível Médio'">
+      <div *ngSwitchCase="'Nível Médio'">
         <h1>roadmap de nível médio</h1>
       </div>
-      <div *ngIf="answerSelected === 'Nível Alto'">
+      <div *ngSwitchCase="'Nível Alto'">
         <h1>roadmap de nível alto</h1>
       </div>
     </div>
   </div>
-</div>
+</main>
