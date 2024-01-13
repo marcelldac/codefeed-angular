@@ -1,0 +1,61 @@
+{
+  "title": "Você seria um herói ou vilão",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual super poder você escolheria?",
+      "options": [
+        {
+          "id": 1,
+          "name": "Raios-lazers",
+          "alias": "A"
+        },
+        {
+          "id": 2,
+          "name": "Voar",
+          "alias": "B"
+        },
+        {
+          "id": 3,
+          "name": "Curar Feridas",
+          "alias": "B"
+        },
+        {
+          "id": 4,
+          "name": "Soltar fogo pelas mãos",
+          "alias": "A"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Quem vocês salvaria primeiro?",
+      "options": [
+        {
+          "id": 1,
+          "name": "Cachorro",
+          "alias": "B"
+        },
+        {
+          "id": 2,
+          "name": "Gato",
+          "alias": "B"
+        },
+        {
+          "id": 3,
+          "name": "Criança",
+          "alias": "A"
+        },
+        {
+          "id": 4,
+          "name": "Idoso",
+          "alias": "A"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "A": "Você provavelmente seria um super vilão",
+    "B": "Você provavelmente seria um super heroi"
+  }
+}
