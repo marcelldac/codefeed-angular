@@ -4,6 +4,7 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { octMarkGithub, octLinkExternal } from '@ng-icons/octicons';
 import { ionLogoLinkedin } from '@ng-icons/ionicons';
 import mock from '../../../assets/data/quizzes.json';
+
 @Component({
   selector: 'app-quiz',
   standalone: true,
